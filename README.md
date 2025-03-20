@@ -27,8 +27,7 @@
 >  - HOST и PORT: Адрес и порт, на котором будет запущен сервер.
 >  - BASE_URL: Внешний URL вашего сервера. Вы можете использовать [localtunnel](https://localtunnel.github.io/www/ "Тык") для получения временного URL.
 
-5. Получите BASE_URL с помощью localtunnel:
-   Установите localtunnel глобально (если еще не установлен):
+5. Установите localtunnel глобально (если еще не установлен) через Терминал:
    ```bash
    npm install -g localtunnel
    ```
