@@ -38,6 +38,6 @@
    ```
    Скопируйте предоставленный URL (например, https://danuuyu.loca.lt) и вставьте его в переменную BASE_URL в файле .env.
 
-6. Перейдите по предоставленному URL и введите Tunnel Pssword (пароль берется из https://loca.lt/mytunnelpassword). 
+6. Перейдите по предоставленному URL и введите Tunnel Password (пароль берется из https://loca.lt/mytunnelpassword). 
 
 7. Запустите стартовый файл (aiogram_run.py):
