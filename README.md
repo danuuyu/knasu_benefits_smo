@@ -40,4 +40,4 @@
 
 6. Перейдите по предоставленному URL и введите Tunnel Password (пароль берется из https://loca.lt/mytunnelpassword). 
 
-7. Запустите стартовый файл (aiogram_run.py):
+7. Запустите стартовый файл (aiogram_run.py).
