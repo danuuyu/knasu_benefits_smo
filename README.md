@@ -2,7 +2,7 @@
 
 1. Клонируйте репозиторий на ваш компьютер:
    ```bash
-   git clone https://github.com/danuuyu/knastu_algorithms.git
+   https://github.com/danuuyu/knasu_benefits_smo.git
 
 2. Создайте и активируйте виртуальное окружение:
     ```bash
