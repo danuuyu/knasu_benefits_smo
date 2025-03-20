@@ -28,6 +28,7 @@
 >  - BASE_URL: Внешний URL вашего сервера. Вы можете использовать [localtunnel](https://localtunnel.github.io/www/ "Тык") для получения временного URL.
 
 5. Установите localtunnel глобально (если еще не установлен) через Терминал:
+> Для работы localtunnel требуется NodeJS.
    ```bash
    npm install -g localtunnel
    ```
@@ -37,4 +38,4 @@
    ```
    Скопируйте предоставленный URL (например, https://danuuyu.loca.lt) и вставьте его в переменную BASE_URL в файле .env.
 
-6. Запустите стартовый файл (aiogram_run.py):
+7. Запустите стартовый файл (aiogram_run.py):
