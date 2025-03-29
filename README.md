@@ -22,10 +22,10 @@
    PORT=8000  # Пример
    BASE_URL=https://danuuyu.loca.lt  # Пример, замените на ваш URL
 
->  - TOKEN: Токен вашего бота, полученный от [BotFather](t.me/BotFather "Тык").
->  - ADMIN_ID: Ваш ID в Telegram (можно узнать у бота [@getmyid_bot](t.me/getmyid_bot "Тык").
+>  - TOKEN: Токен вашего бота, полученный от [BotFather](t.me/BotFather).
+>  - ADMIN_ID: Ваш ID в Telegram (можно узнать у бота [@getmyid_bot](t.me/getmyid_bot)).
 >  - HOST и PORT: Адрес и порт, на котором будет запущен сервер.
->  - BASE_URL: Внешний URL вашего сервера. Вы можете использовать [localtunnel](https://localtunnel.github.io/www/ "Тык") для получения временного URL.
+>  - BASE_URL: Внешний URL вашего сервера. Вы можете использовать [localtunnel](https://localtunnel.github.io/www/) для получения временного URL.
 
 5. Установите localtunnel глобально (если еще не установлен) через Терминал:
 > Для работы localtunnel требуется NodeJS.
