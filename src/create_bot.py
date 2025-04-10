@@ -3,7 +3,7 @@ from aiogram.client.default import DefaultBotProperties
 from aiogram.enums import ParseMode
 from decouple import config
 
-# переменные для работы
+# переменные для работы из .env
 ADMIN_ID = config("ADMIN_ID")
 BOT_TOKEN = config("TOKEN")
 HOST = config("HOST")

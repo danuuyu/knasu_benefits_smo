@@ -1,8 +1,8 @@
 from aiogram.types import ReplyKeyboardMarkup, KeyboardButton
 
-async def start_keyboard():
+def start_keyboard():
     buttons = [
-        [KeyboardButton(text="Льготы"), KeyboardButton(text="Обратная связь")],
+        [KeyboardButton(text="Льготы")],
     ]
     keyboard = ReplyKeyboardMarkup(
     keyboard=buttons,
