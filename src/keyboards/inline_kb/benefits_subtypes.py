@@ -1,25 +1,28 @@
 from aiogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 from aiogram.utils.keyboard import InlineKeyboardBuilder
 
-def create_benefits_type_1_kb() -> InlineKeyboardMarkup:
+def create_benefits_some_type_kb(list_values) -> InlineKeyboardMarkup:
     builder = InlineKeyboardBuilder()
-    for i in range(1, 9):
-        builder.row(
+    count, num = list_values
+    for i in range(1, count + 1):
+        builder.add(
             InlineKeyboardButton(
                 text = str(i),
-                callback_data = f'benefit_name_1{i}'
+                callback_data = f'benefit_name_{num}{i}'
             )
         )
+    
+    builder.adjust(4)
+
     builder.row(
         InlineKeyboardButton(
             text = '⬅️ Назад',
             callback_data = 'back'
         )
     )
-    builder.adjust(4)
     return builder.as_markup()
 
-def create_benefit_type_kb(benefit_key) -> InlineKeyboardMarkup:
+def create_benefits_subtype_kb(benefit_key) -> InlineKeyboardMarkup:
     builder = InlineKeyboardBuilder()
     builder.row(
         InlineKeyboardButton(
@@ -27,7 +30,7 @@ def create_benefit_type_kb(benefit_key) -> InlineKeyboardMarkup:
             callback_data = f'{benefit_key}_content' 
         ),
        InlineKeyboardButton(
-            text = 'Постановления',
+            text = 'Нормативные акты',
             callback_data = f'{benefit_key}_acts' 
         ),
         InlineKeyboardButton(
@@ -36,15 +39,4 @@ def create_benefit_type_kb(benefit_key) -> InlineKeyboardMarkup:
         )
     )
     builder.adjust(2)
-    return builder.as_markup()
-
-def create_benefit_type_content() -> InlineKeyboardMarkup:
-    builder = InlineKeyboardBuilder()
-    builder.row(
-        InlineKeyboardButton(
-            text = '⬅️ Назад',
-            callback_data = 'back'
-        )
-    )
-    builder.adjust(1)
     return builder.as_markup()

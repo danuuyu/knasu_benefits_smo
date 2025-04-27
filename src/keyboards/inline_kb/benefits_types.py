@@ -27,3 +27,14 @@ def create_benefits_types_kb() -> InlineKeyboardMarkup:
     )
     builder.adjust(1)
     return builder.as_markup()
+
+def create_benefit_type_back() -> InlineKeyboardMarkup:
+    builder = InlineKeyboardBuilder()
+    builder.row(
+        InlineKeyboardButton(
+            text = '⬅️ Назад',
+            callback_data = 'back'
+        )
+    )
+    builder.adjust(1)
+    return builder.as_markup()

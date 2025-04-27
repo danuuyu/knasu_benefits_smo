@@ -2,7 +2,7 @@ from aiogram.types import ReplyKeyboardMarkup, KeyboardButton
 
 def start_keyboard():
     buttons = [
-        [KeyboardButton(text="Льготы")],
+        [KeyboardButton(text="Льготы"), KeyboardButton(text="Файл с льготами")],
     ]
     keyboard = ReplyKeyboardMarkup(
     keyboard=buttons,
