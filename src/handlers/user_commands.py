@@ -1,5 +1,5 @@
 import os
-from create_bot import data_dir
+from create_bot import data_dir, benefit_types
 from aiogram import Router, F
 from aiogram.filters import CommandStart, StateFilter
 from aiogram.fsm.context import FSMContext
@@ -9,13 +9,6 @@ from client.get_messages import get_message
 from keyboards.reply_kb.start_kb import start_keyboard
 from keyboards.inline_kb.benefits_types import create_benefits_types_kb, create_benefit_type_back
 from keyboards.inline_kb.benefits_subtypes import create_benefits_some_type_kb, create_benefits_subtype_kb
-
-benefit_types = {'list_type_benefits_1': [8, 1], #кол-во льгот и порядковый номер
-                 'list_type_benefits_2': [3, 2],
-                 'list_type_benefits_3': [1, 3],
-                 'list_type_benefits_4': [1, 4],
-                 'list_type_benefits_5': [5, 5]
-                 }
 
 router = Router()
 
